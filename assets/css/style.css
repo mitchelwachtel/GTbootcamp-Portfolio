@@ -92,6 +92,31 @@ main .info .info-block {
   color: var(--dark-header-footer-background);
 }
 
+main .info .work-samples {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+main .info .work-samples .featured {
+    width: 80%;
+    margin-bottom: 20px;
+}
+main .info .work-samples .featured img{
+    width: 100%;
+}
+
+main .info .work-samples .secondary {
+    width: 40%;
+    
+}
+
+main .info .work-samples .secondary img{
+    width: 100%;
+    height: 200px;
+}
+
 main .info .contact-block {
     display: flex;
   }
