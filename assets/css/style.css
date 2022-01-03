@@ -1,15 +1,13 @@
 /* VARIABLES */
 :root {
-    --green-text: #75754f;
-    --dark: #1a1c29;
-    --header-footer-background: #1a1c29;
-    --main-background-color: #Cab4a5;
+    --dark-header-footer-background: #1a1c29;
+    --light-main-background-color: #Cab4a5;
     --pop-of-color: #741e27;
 }
 
 /* UNIVERSAL */
 * {
-  background-color: var(--main-background-color);
+  background-color: var(--light-main-background-color);
 }
 
 /* HEADER & NAV BAR */
@@ -17,7 +15,7 @@ header {
   padding: 20px 20px 20px 0px;
   display: flex;
   justify-content: space-between;
-  background-color: var(--header-footer-background);
+  background-color: var(--dark-header-footer-background);
   align-items: center;
 }
 
@@ -26,8 +24,8 @@ header h1 {
   width: auto;
   height: auto;
   text-align: center;
-  color: var(--main-background-color);
-  background-color: var(--header-footer-color);
+  color: var(--light-main-background-color);
+  background-color: var(--dark-header-footer-color);
   padding: 10px 10px 10px 30px;
   border-bottom-right-radius: 10px;
   border-top-right-radius: 10px;
@@ -44,12 +42,12 @@ header h1 {
 .nav-bar li {
   padding: 20px;
   text-align: center;
-  background-color: var(--header-footer-background);
+  background-color: var(--dark-header-footer-background);
 }
 
 .nav-bar li a {
-  background-color: var(--header-footer-background);
-  color: var(--main-background-color);
+  background-color: var(--dark-header-footer-background);
+  color: var(--light-main-background-color);
   font-size: 18px;
 }
 
@@ -79,16 +77,16 @@ main .info {
 main .info .info-title {
   width: 20%;
   font-size: 30px;
-  border-right: 2px solid var(--header-footer-background);
+  border-right: 2px solid var(--dark-header-footer-background);
   padding: 10px;
   text-align:right;
-  color: var(--dark);
+  color: var(--dark-header-footer-background);
 }
 
 main .info .info-block {
   width: 80%;
   margin: 10px 20px;
-  color: var(--dark);
+  color: var(--dark-header-footer-background);
 }
 
 /* FOOTER */
@@ -97,13 +95,13 @@ footer {
   display: flex;
   justify-content: center;
   margin: 0px 20px 20px 20px;
-  background-color: var(--header-footer-background);
+  background-color: var(--dark-header-footer-background);
   padding: 20px;
 }
 
 footer h3 {
-  background-color: var(--header-footer-background);
-  color: var(--main-background-color);
+  background-color: var(--dark-header-footer-background);
+  color: var(--light-main-background-color);
   font-size: 20px;
 }
 
