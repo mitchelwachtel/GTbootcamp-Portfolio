@@ -1,0 +1,28 @@
+
+/* header and Nav bar */
+header {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+h1 {
+    font-size: 40px;
+    width: auto;
+    height: auto;
+    text-align: center;
+}
+
+.nav-bar {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.nav-bar li {
+    padding: 20px;
+    text-align: center;
+}
+
+.nav-bar li a {
+    color: black;
+}
