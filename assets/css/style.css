@@ -1,17 +1,18 @@
-/* variables */
+/* VARIABLES */
 :root {
-    --light: #FFFFFF;
-    --dark: #0A1612;
-    --header-footer-background: #1A2930;
-    --main-background-color: #C5C1C0;
-    --pop-of-color: #F7CE3E;
+    --green-text: #75754f;
+    --dark: #1a1c29;
+    --header-footer-background: #1a1c29;
+    --main-background-color: #Cab4a5;
+    --pop-of-color: #741e27;
 }
 
+/* UNIVERSAL */
 * {
   background-color: var(--main-background-color);
 }
 
-/* header and Nav bar */
+/* HEADER & NAV BAR */
 header {
   padding: 20px 20px 20px 0px;
   display: flex;
@@ -25,11 +26,14 @@ header h1 {
   width: auto;
   height: auto;
   text-align: center;
-  color: var(--dark);
-  background-color: var(--pop-of-color);
+  color: var(--main-background-color);
+  background-color: var(--header-footer-color);
   padding: 10px 10px 10px 30px;
   border-bottom-right-radius: 10px;
   border-top-right-radius: 10px;
+  border-top: 3px solid var(--pop-of-color);
+  border-right: 3px solid var(--pop-of-color);
+  border-bottom: 3px solid var(--pop-of-color);
 }
 
 .nav-bar {
@@ -44,12 +48,24 @@ header h1 {
 }
 
 .nav-bar li a {
-  color: black;
   background-color: var(--header-footer-background);
   color: var(--main-background-color);
+  font-size: 18px;
 }
 
-/* main */
+/* BANNER PHOTO */
+.banner-pic {
+    display: flex;
+}
+
+.banner-pic img {
+    width: 100%;
+    height: auto;
+}
+
+/* MAIN */
+
+
 main {
   display: flex;
   flex-direction: column;
@@ -65,14 +81,17 @@ main .info .info-title {
   font-size: 30px;
   border-right: 2px solid var(--header-footer-background);
   padding: 10px;
+  text-align:right;
+  color: var(--dark);
 }
 
 main .info .info-block {
   width: 80%;
-  margin: 10px;
+  margin: 10px 20px;
+  color: var(--dark);
 }
 
-/* footer */
+/* FOOTER */
 
 footer {
   display: flex;
@@ -87,3 +106,5 @@ footer h3 {
   color: var(--main-background-color);
   font-size: 20px;
 }
+
+/* MEDIA QUERIES */
