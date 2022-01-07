@@ -270,7 +270,19 @@ header .nav-bar li:hover {
   border-radius: 7px;
 }
 
+
+/* Why doesn't this work, but the following did???
 img:hover {
-  filter: opacity(10%);
+  filter: opacity(100%);
+}
+*/
+
+#work .info-block img:hover {
+  filter: opacity(100%);
+}
+
+a:hover + .work-info {
+  border-color: var(--pop-of-color);
+  
 }
 
