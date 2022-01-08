@@ -1,5 +1,5 @@
 /* VARIABLES */
-/* Color choices are based on the banner pic */
+/* Color choices are based on the banner pic using app "Sip" */
 :root {
   --dark-header-footer-background: #1a1c29;
   --light-main-background-color: #cab4a5;
@@ -12,6 +12,8 @@
 }
 
 /* HEADER & NAV BAR */
+/* display: flex on the entire header container so the two items h1 and .nav-bar can respond to changes in the size of the page */
+/* I wanted h1 and .nav-bar to stay as far apart as possible, so my justify-content is set to space between */
 header {
   padding: 20px 20px 20px 0px;
   display: flex;
@@ -20,7 +22,7 @@ header {
   align-items: center;
 }
 
-header h1 {
+h1 {
   font-size: 40px;
   width: auto;
   height: auto;
@@ -40,7 +42,10 @@ h1 a {
   background-color: var(--dark-header-footer-color);
 }
 
-header .nav-bar {
+
+/* Nav Bar */
+/* display: flex on entire container so the individual list items can respond to changes in the page*/
+.nav-bar {
   display: flex;
   justify-content: flex-end;
   background-color: var(--dark-header-footer-color);
@@ -48,24 +53,26 @@ header .nav-bar {
   align-items: center;
 }
 
-header .nav-bar li {
+li {
   padding: 8px;
   text-align: center;
   background-color: var(--dark-header-footer-background);
   margin: 10px;
 }
 
-header .nav-bar li a {
+li a {
   background-color: var(--dark-header-footer-background);
   color: var(--light-main-background-color);
   font-size: 18px;
 }
 
-/* BANNER PHOTO */
-.banner-pic {
-  display: flex;
-}
 
+
+
+
+
+/* BANNER PHOTO */
+/* The following allows the picture to move with the page and maintain the same aspect ratio */
 .banner-pic img {
   width: 100%;
   height: auto;
@@ -73,19 +80,12 @@ header .nav-bar li a {
 
 /* MAIN */
 
-main {
-  display: flex;
-  flex-direction: column;
-}
-h2 {
-  color: var(--dark-header-footer-background);
-}
 .info {
   display: flex;
   margin: 20px;
 }
 
-.info .info-title {
+.info-title {
   width: 20%;
   font-size: 30px;
   border-right: 2px solid var(--pop-of-color);
@@ -94,7 +94,7 @@ h2 {
   color: var(--dark-header-footer-background);
 }
 
-.info .info-block {
+.info-block {
   width: 80%;
   margin: 10px 20px;
   color: var(--dark-header-footer-background);
@@ -102,11 +102,11 @@ h2 {
   justify-content: flex-start;
 }
 
-.info .info-block p {
+.work-samples p {
   width: 100%;
 }
 
-.info .work-samples {
+.work-samples {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -198,6 +198,7 @@ footer h3 {
 }
 
 @media screen and (max-width: 768px) {
+  /* changing 3 main section headings to be centered on the web-page */
   main {
     flex-direction: column;
     align-items: center;
@@ -214,6 +215,7 @@ footer h3 {
     border-bottom: 2px solid var(--pop-of-color);
     text-align: center;
   }
+  /* keeping the  */
   .work-info {
     width: fit-content;
     padding: 5px;
@@ -231,7 +233,17 @@ footer h3 {
   .info .work-samples .secondary img {
     height: 150px;
   }
-
+/* Change the contact info to center under "contact me" */
+  main .info .contact-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+  .info-contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 @media screen and (max-width: 576px) {
