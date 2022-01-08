@@ -35,6 +35,11 @@ header h1 {
   border-bottom: 3px solid var(--pop-of-color);
 }
 
+h1 a {
+  color: var(--light-main-background-color);
+  background-color: var(--dark-header-footer-color);
+}
+
 header .nav-bar {
   display: flex;
   justify-content: flex-end;
@@ -72,7 +77,9 @@ main {
   display: flex;
   flex-direction: column;
 }
-
+h2 {
+  color: var(--dark-header-footer-background);
+}
 .info {
   display: flex;
   margin: 20px;
@@ -115,7 +122,7 @@ main {
 
 .info .work-samples .featured img {
   width: 100%;
-  filter: opacity(30%);
+  opacity: .3;
 }
 
 .info .work-samples .not-featured {
@@ -134,7 +141,7 @@ main {
 .info .work-samples .secondary img {
   width: 100%;
   height: 250px;
-  filter: opacity(30%);
+  opacity: .3;
   object-fit: cover;
   object-position: top;
 }
@@ -271,15 +278,15 @@ header .nav-bar li:hover {
 }
 
 
-/* Why doesn't this work, but the following did???
-img:hover {
-  filter: opacity(100%);
-}
-*/
+/* img:hover {
+  display: none;
+} */
+
 
 #work .info-block img:hover {
-  filter: opacity(100%);
+  opacity: 1;
 }
+
 
 a:hover + .work-info {
   border-color: var(--pop-of-color);
