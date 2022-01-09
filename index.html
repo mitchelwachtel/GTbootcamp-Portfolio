@@ -8,7 +8,9 @@
     <title>Mitchel Wachtel Portfolio</title>
   </head>
 
+<!-- header and nav bar -->
   <header>
+    <!-- h1 link is not shown with same hover properties that nav bar includes, so this is a secret link -->
     <h1><a href="http://www.mitchelwachtel.me" target="_blank" rel="noopener noreferrer">Mitchel Wachtel</a> </h1>
     <ul class="nav-bar">
       <li><a href="#about-me">About Me</a></li>
@@ -24,10 +26,13 @@
     </ul>
   </header>
 
+<!-- div class for the banner under header -->
   <div class="banner-pic">
-    <img src="./assets/images/DN9A8934.jpg" alt="Me with my wife and child" />
+    <img src="./assets/images/DN9A8934.jpg" alt="Mitchel Wachtel with his wife and child" />
   </div>
 
+  <!-- main is split into 3 sections: (1)#about-me  (2)#work  (3)#about-me  -->
+  <!-- inside each section there is a div for the '.info-title' and then a div for the '.info-block' -->
   <main>
     <section id="about-me" class="info">
       <h2 class="info-title">About Me</h2>
@@ -48,6 +53,7 @@
     <section id="work" class="info">
       <h2 class="info-title">Work</h2>
       <div class="info-block work-samples">
+        <!-- this .info-block is split into 2 divs '.featured' contains 1 featured work-sample and '.secondary' contains 4 work-samples that will appear smaller than the featured project-->
         <figure class="featured">
           <a href="http://mitchelwachtel.me/Unit2_MiniProject/" target="_blank"
             ><img
