@@ -85,6 +85,7 @@ li a {
   margin: 20px;
 }
 
+/* Each section is split between the info-title and the info-block (with the content). The title will get the left 20% of the screen, and the info will get what is remaining on the right (80%) */
 .info-title {
   width: 20%;
   font-size: 30px;
@@ -114,31 +115,32 @@ li a {
   margin: 5px 20px;
 }
 
-.info .work-samples .featured {
+.featured {
   margin-bottom: 10px;
   width: 100%;
   position: relative;
 }
 
-.info .work-samples .featured img {
+/* The work-sample preview images are getting a 30% opaqueness so that they better match the color scheme of the page AND that upon hover they can become fully opaque */
+.featured img {
   width: 100%;
   opacity: .3;
 }
 
-.info .work-samples .not-featured {
+.not-featured {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   width: 100%;
 }
 
-.info .work-samples .secondary {
+.secondary {
   width: 47%;
   margin-bottom: 10px;
   position: relative;
 }
 
-.info .work-samples .secondary img {
+.secondary img {
   width: 100%;
   height: 250px;
   opacity: .3;
@@ -176,6 +178,7 @@ main .info .contact-block .info-contact {
 
 /* FOOTER */
 
+/* Center the footer info */
 footer {
   display: flex;
   justify-content: center;
@@ -190,7 +193,12 @@ footer h3 {
   font-size: 20px;
 }
 
+
+
+
+
 /* MEDIA QUERIES */
+/* As the screen gets smaller, the size of the non-featured work-sample previews will decrease, but standardizing their height keeps them uniform */
 @media screen and (max-width: 992px) {
   .info .work-samples .secondary img {
     height: 200px;
@@ -213,6 +221,10 @@ footer h3 {
     padding: 0px;
     border: none;
     border-bottom: 2px solid var(--pop-of-color);
+    text-align: center;
+  }
+  /* As the page's main content changes to a column layout, the content in each section needs to be centered under its header */
+  .info-block p {
     text-align: center;
   }
   /* keeping the  */
@@ -247,21 +259,22 @@ footer h3 {
 }
 
 @media screen and (max-width: 576px) {
+  /* As the page switches to a mobile layout, the header goes to a column layout with the .nav-bar being layed out vertically */
   header {
     flex-direction: column;
   }
-  header h1 {
+  h1 {
     border: none;
     border-bottom: 3px solid var(--pop-of-color);
     border-bottom-right-radius: 10px;
     border-bottom-left-radius: 10px;
   }
-  header .nav-bar {
+  .nav-bar {
     flex-direction: column;
     align-content: center;
     margin-top: 5px;
   }
-  header .nav-bar li {
+  li {
     padding: 6px;
   }
   .work-info {
@@ -284,22 +297,23 @@ footer h3 {
 }
 
 /* ANIMATIONS */
+/* When the list items are hovered upon, they get a border */
 header .nav-bar li:hover {
   border: 2px solid var(--pop-of-color);
   border-radius: 7px;
 }
 
-
+/* Discovered that this did NOT work... at all. The images had to be selected specifically as you can see below */
 /* img:hover {
   display: none;
 } */
 
-
+/* The work-sample preview images are by default at a 30% opacity, but when hovered upon they become fully opaque */
 #work .info-block img:hover {
   opacity: 1;
 }
 
-
+/* Upon hover of the work sample preview images, the info box's border changes color */
 a:hover + .work-info {
   border-color: var(--pop-of-color);
   
