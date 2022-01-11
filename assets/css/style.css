@@ -148,9 +148,11 @@ li a {
   object-position: top;
 }
 
-.work-info,
-.work-info > * {
+.work-info {
   background-color: var(--light-main-background-color);
+}
+.work-info > * {
+  background-color: transparent;
 }
 
 .work-info {
@@ -164,6 +166,12 @@ li a {
 .work-info p {
   font-size: 12px;
 }
+.work-info a {
+  background-color: transparent;
+  color: var(--dark-header-footer-background);
+}
+
+
 
 main .info .contact-block {
   width: 80%;
@@ -313,9 +321,9 @@ header .nav-bar li:hover {
   opacity: 1;
 }
 
-/* Upon hover of the work sample preview images, the info box's border changes color */
-a:hover + .work-info {
-  border-color: var(--pop-of-color);
-  
-}
 
+
+.work-info:hover{
+  background-color: var(--pop-of-color);
+  color: var(--light-main-background-color);
+}

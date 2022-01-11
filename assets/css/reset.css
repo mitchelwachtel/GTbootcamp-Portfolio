@@ -31,4 +31,5 @@
   ol, ul, a {
     list-style: none;
     text-decoration: none;
+    color: var(--dark-header-footer-background);
   }
