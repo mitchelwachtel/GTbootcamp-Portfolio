@@ -45,7 +45,7 @@
   <!-- inside each section there is a div for the '.info-title' and then a div for the '.info-block' -->
   <main>
     <section id="about-me" class="info">
-      <h2 class="info-title">About Me</h2>
+      <h2 class="info-title bottom">About Me</h2>
       <div class="info-block">
         <p>
           I have experience coding in HTML, CSS, and Javascript. I'm currently
@@ -64,42 +64,45 @@
     </section>
 
     <section id="work" class="info">
-      <h2 class="info-title">Work</h2>
+      <div class="info-title">
+      <h2>Work</h2>
+      <p class="bottom">The screenshot takes you to the deployed app and the title box takes you to the GitHub repository.</p>
+    </div>
       <div class="info-block work-samples">
         <!-- this .info-block is split into 2 divs '.featured' contains 1 featured work-sample and '.secondary' contains 4 work-samples that will appear smaller than the featured project-->
         <figure class="featured">
           <a
-            href="http://mitchelwachtel.me/weather-dashboard"
+            href="http://mitchelwachtel.me/gourmet-guru"
             target="_blank"
             ><img
-              src="./assets/images/lowUV.png"
-              alt="Screenshot of the Weather brower application"
+              src="./assets/images/food.png"
+              alt="Screenshot of the Gourmet Guru brower application"
           /></a>
 
           <a
-            href="https://github.com/mitchelwachtel/weather-dashboard"
+            href="https://github.com/mitchelwachtel/gourmet-guru"
             target="_blank"
           >
             <div class="work-info">
-              <h5>Weather Dashboard</h5>
-              <p>JS, CSS, HTML</p>
+              <h5>Gourmet Guru</h5>
+              <p>JS, APIs, Bootstrap</p>
             </div></a
           >
         </figure>
         <div class="not-featured">
           <figure class="secondary">
-            <a href="https://www.mitchelwachtel.me/code-quiz/" target="_blank"
+            <a href="https://www.mitchelwachtel.me/weather-dashboard/" target="_blank"
               ><img
-                src="./assets/images/question.png"
-                alt="Screenshot of the Code Quiz brower application"
+                src="./assets/images/lowUV.png"
+                alt="Screenshot of the Weather brower application"
             /></a>
             <a
-              href="https://github.com/mitchelwachtel/code-quiz"
+              href="https://github.com/mitchelwachtel/weather-dashboard"
               target="_blank"
             >
               <div class="work-info">
-                <h5>Code Quiz</h5>
-                <p>JS, CSS, HTML</p>
+                <h5>Weather Dashboard</h5>
+                <p>JS, APIs, Bootstrap</p>
               </div></a
             >
           </figure>
@@ -121,18 +124,18 @@
           </figure>
           <figure class="secondary">
             <a
-              href="http://mitchelwachtel.me/word-guess"
+              href="http://mitchelwachtel.me/code-quiz"
               target="_blank"
               ><img
-                src="./assets/images/wordguess.png"
-                alt="Screenshot of the Word Guess browser game"
+                src="./assets/images/question.png"
+                alt="Screenshot of the Code Quiz brower applicatione"
             /></a>
             <a
-              href="https://github.com/mitchelwachtel/word-guess"
+              href="https://github.com/mitchelwachtel/code-quiz"
               target="_blank"
             >
               <div class="work-info">
-                <h5>Word Guess</h5>
+                <h5>Code Quiz</h5>
                 <p>JS, CSS, HTML</p>
               </div></a
             >
@@ -161,7 +164,7 @@
     </section>
 
     <section id="contact-me" class="info">
-      <h2 class="info-title">Contact Me</h2>
+      <h2 class="info-title bottom">Contact Me</h2>
       <div class="info-block contact-block">
         <div class="info-contact">
           <h4>Phone</h4>
