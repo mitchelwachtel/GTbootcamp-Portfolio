@@ -7,178 +7,198 @@
     <link rel="stylesheet" href="./assets/css/style.css" />
     <title>Mitchel Wachtel Portfolio</title>
   </head>
-
-  <!-- header and nav bar -->
-  <header>
-    <!-- h1 link is not shown with same hover properties that nav bar includes, so this is a secret link -->
-    <h1>
-      <a
-        href="http://www.mitchelwachtel.me"
-        target="_blank"
-        rel="noopener noreferrer"
-        >Mitchel Wachtel</a
-      >
-    </h1>
-    <ul class="nav-bar">
-      <li><a href="#about-me">About Me</a></li>
-      <li><a href="#work">Work</a></li>
-      <li><a href="#contact-me">Contact Me</a></li>
-      <li>
+  <body>
+    <!-- header and nav bar -->
+    <header>
+      <!-- h1 link is not shown with same hover properties that nav bar includes, so this is a secret link -->
+      <h1>
         <a
-          href="https://docs.google.com/document/d/1DpnudGN5NjNlIpKcAYlks0VulKKWYkldocFCiUZCXyo/edit?usp=sharing"
+          href="http://www.mitchelwachtel.me"
           target="_blank"
-          >Resume</a
+          rel="noopener noreferrer"
+          >Mitchel Wachtel</a
         >
-      </li>
-    </ul>
-  </header>
-
-  <!-- div class for the banner under header -->
-  <div class="banner-pic">
-    <img
-      src="./assets/images/DN9A8934.jpg"
-      alt="Mitchel Wachtel with his wife and child"
-    />
-  </div>
-
-  <!-- main is split into 3 sections: (1)#about-me  (2)#work  (3)#about-me  -->
-  <!-- inside each section there is a div for the '.info-title' and then a div for the '.info-block' -->
-  <main>
-    <section id="about-me" class="info">
-      <h2 class="info-title bottom">About Me</h2>
-      <div class="info-block">
-        <p>
-          I have experience coding in HTML, CSS, and Javascript. I'm currently
-          in the Georgia Tech Coding Bootcamp with plans to secure a job in
-          front-end, back-end, or full stack web development in June of 2022. As
-          I have taught seniors in AP Calculus the last several years, I have
-          been inspired. I continue to send brilliant students to study and
-          pursue careers in multiple STEM fields, and I want to follow them.
-          That is why I’m in the GT coding bootcamp while I finish this school
-          year teaching. I want to apply my logic and problem-solving abilities
-          to create. I want to leverage my passion for education in new avenues,
-          including making myself a life-long learner in the constantly changing
-          tech world.
-        </p>
-      </div>
-    </section>
-
-    <section id="work" class="info">
-      <div class="info-title">
-      <h2>Work</h2>
-      <p class="bottom">The screenshot takes you to the deployed app and the title box takes you to the GitHub repository.</p>
-    </div>
-      <div class="info-block work-samples">
-        <!-- this .info-block is split into 2 divs '.featured' contains 1 featured work-sample and '.secondary' contains 4 work-samples that will appear smaller than the featured project-->
-        <figure class="featured">
-          <a
-            href="http://mitchelwachtel.me/gourmet-guru"
-            target="_blank"
-            ><img
-              src="./assets/images/food.png"
-              alt="Screenshot of the Gourmet Guru brower application"
-          /></a>
-
-          <a
-            href="https://github.com/mitchelwachtel/gourmet-guru"
-            target="_blank"
-          >
-            <div class="work-info">
-              <h5>Gourmet Guru</h5>
-              <p>JS, APIs, Bootstrap</p>
-            </div></a
-          >
-        </figure>
-        <div class="not-featured">
-          <figure class="secondary">
-            <a href="https://www.mitchelwachtel.me/weather-dashboard/" target="_blank"
-              ><img
-                src="./assets/images/lowUV.png"
-                alt="Screenshot of the Weather brower application"
-            /></a>
+      </h1>
+      <ul class="nav-bar">
+        <li><a href="#about-me">About Me</a></li>
+        <li><a href="#work">Work Samples</a></li>
+        <li><a href="#contact-me">Contact Me</a></li>
+        <li class="dropdown">
+          <a class="dropbtn"> Links &#x25BE; </a>
+          <div class="dropdown-content">
             <a
-              href="https://github.com/mitchelwachtel/weather-dashboard"
+              class="dropdown-item"
+              href="https://www.linkedin.com/in/mitchelwachtel"
+              target="_blank"
+              >LinkedIn</a
+            >
+            <a
+              class="dropdown-item"
+              href="https://www.github.com/mitchelwachtel"
+              target="_blank"
+              >Github</a
+            >
+            <a
+              class="dropdown-item"
+              href="./assets/docs/Wachtel Resume 2022.pdf"
+              target="_blank"
+              >Resume</a
+            >
+          </div>
+        </li>
+      </ul>
+    </header>
+
+    <!-- div class for the banner under header -->
+    <div class="banner-pic">
+      <img
+        src="./assets/images/DN9A8934.jpg"
+        alt="Mitchel Wachtel with his wife and child"
+      />
+    </div>
+
+    <!-- main is split into 3 sections: (1)#about-me  (2)#work  (3)#about-me  -->
+    <!-- inside each section there is a div for the '.info-title' and then a div for the '.info-block' -->
+    <main>
+      <section id="about-me" class="info">
+        <h2 class="info-title bottom">About Me</h2>
+        <div class="info-block">
+          <p>
+            I have experience coding in HTML, CSS, and Javascript. I'm currently
+            in the Georgia Tech Coding Bootcamp with plans to secure a job in
+            front-end, back-end, or full stack web development in June of 2022.
+            As I have taught seniors in AP Calculus the last several years, I
+            have been inspired. I continue to send brilliant students to study
+            and pursue careers in multiple STEM fields, and I want to follow
+            them. That is why I’m in the GT coding bootcamp while I finish this
+            school year teaching. I want to apply my logic and problem-solving
+            abilities to create. I want to leverage my passion for education in
+            new avenues, including making myself a life-long learner in the
+            constantly changing tech world.
+          </p>
+        </div>
+      </section>
+
+      <section id="work" class="info">
+        <div class="info-title">
+          <h2>Work</h2>
+          <p class="bottom">
+            The screenshot takes you to the deployed app and the title box takes
+            you to the GitHub repository.
+          </p>
+        </div>
+        <div class="info-block work-samples">
+          <!-- this .info-block is split into 2 divs '.featured' contains 1 featured work-sample and '.secondary' contains 4 work-samples that will appear smaller than the featured project-->
+          <figure class="featured">
+            <a href="http://mitchelwachtel.me/gourmet-guru" target="_blank"
+              ><img
+                src="./assets/images/food.png"
+                alt="Screenshot of the Gourmet Guru brower application"
+            /></a>
+
+            <a
+              href="https://github.com/mitchelwachtel/gourmet-guru"
               target="_blank"
             >
               <div class="work-info">
-                <h5>Weather Dashboard</h5>
+                <h5>Gourmet Guru</h5>
                 <p>JS, APIs, Bootstrap</p>
               </div></a
             >
           </figure>
-          <figure class="secondary">
-            <a href="https://www.mitchelwachtel.me/day-planner" target="_blank"
-              ><img
-                src="./assets/images/day-planner.png"
-                alt="Screenshot of the Day Planner Web Project"
-            /></a>
-            <a
-              href="https://github.com/mitchelwachtel/day-planner"
-              target="_blank"
-            >
-              <div class="work-info">
-                <h5>Day Planner</h5>
-                <p>JS, Moment.js, Bootstrap</p>
-              </div></a
-            >
-          </figure>
-          <figure class="secondary">
-            <a
-              href="http://mitchelwachtel.me/code-quiz"
-              target="_blank"
-              ><img
-                src="./assets/images/question.png"
-                alt="Screenshot of the Code Quiz brower applicatione"
-            /></a>
-            <a
-              href="https://github.com/mitchelwachtel/code-quiz"
-              target="_blank"
-            >
-              <div class="work-info">
-                <h5>Code Quiz</h5>
-                <p>JS, CSS, HTML</p>
-              </div></a
-            >
-          </figure>
-          <figure class="secondary">
-            <a
-              href="https://www.mitchelwachtel.me/password-generator/"
-              target="_blank"
-              ><img
-                src="./assets/images/pass-gen.png"
-                alt="Screenshot of the Password Generator web project"
-            /></a>
-            <a
-              href="https://github.com/mitchelwachtel/password-generator"
-              target="_blank"
-            >
-              <div class="work-info">
-                <h5>Password Generator</h5>
-                <p>Javascript</p>
-              </div></a
-            >
-          </figure>
-          
+          <div class="not-featured">
+            <figure class="secondary">
+              <a
+                href="https://www.mitchelwachtel.me/weather-dashboard/"
+                target="_blank"
+                ><img
+                  src="./assets/images/lowUV.png"
+                  alt="Screenshot of the Weather brower application"
+              /></a>
+              <a
+                href="https://github.com/mitchelwachtel/weather-dashboard"
+                target="_blank"
+              >
+                <div class="work-info">
+                  <h5>Weather Dashboard</h5>
+                  <p>JS, APIs, Bootstrap</p>
+                </div></a
+              >
+            </figure>
+            <figure class="secondary">
+              <a
+                href="https://www.mitchelwachtel.me/day-planner"
+                target="_blank"
+                ><img
+                  src="./assets/images/day-planner.png"
+                  alt="Screenshot of the Day Planner Web Project"
+              /></a>
+              <a
+                href="https://github.com/mitchelwachtel/day-planner"
+                target="_blank"
+              >
+                <div class="work-info">
+                  <h5>Day Planner</h5>
+                  <p>JS, Moment.js, Bootstrap</p>
+                </div></a
+              >
+            </figure>
+            <figure class="secondary">
+              <a href="http://mitchelwachtel.me/code-quiz" target="_blank"
+                ><img
+                  src="./assets/images/question.png"
+                  alt="Screenshot of the Code Quiz brower applicatione"
+              /></a>
+              <a
+                href="https://github.com/mitchelwachtel/code-quiz"
+                target="_blank"
+              >
+                <div class="work-info">
+                  <h5>Code Quiz</h5>
+                  <p>JS, CSS, HTML</p>
+                </div></a
+              >
+            </figure>
+            <figure class="secondary">
+              <a
+                href="https://www.mitchelwachtel.me/password-generator/"
+                target="_blank"
+                ><img
+                  src="./assets/images/pass-gen.png"
+                  alt="Screenshot of the Password Generator web project"
+              /></a>
+              <a
+                href="https://github.com/mitchelwachtel/password-generator"
+                target="_blank"
+              >
+                <div class="work-info">
+                  <h5>Password Generator</h5>
+                  <p>Javascript</p>
+                </div></a
+              >
+            </figure>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section id="contact-me" class="info">
-      <h2 class="info-title bottom">Contact Me</h2>
-      <div class="info-block contact-block">
-        <div class="info-contact">
-          <h4>Phone</h4>
-          <p>478.319.7434</p>
+      <section id="contact-me" class="info">
+        <h2 class="info-title bottom">Contact Me</h2>
+        <div class="info-block contact-block">
+          <div class="info-contact">
+            <h4>Phone</h4>
+            <p>478.319.7434</p>
+          </div>
+          <div class="info-contact">
+            <h4>Email</h4>
+            <p>mitchel.wachtel@gmail.com</p>
+          </div>
         </div>
-        <div class="info-contact">
-          <h4>Email</h4>
-          <p>mitchel.wachtel@gmail.com</p>
-        </div>
-      </div>
-    </section>
-  </main>
+      </section>
 
-  <footer>
-    <h3>Mitchel Wachtel - January 2022</h3>
-  </footer>
+    </main>
+
+    <footer>
+      <h3>Mitchel Wachtel - 2022</h3>
+    </footer>
+  </body>
 </html>
