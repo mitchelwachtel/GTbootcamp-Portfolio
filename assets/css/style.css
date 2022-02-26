@@ -390,7 +390,6 @@ header .nav-bar li:hover {
 
 .dropdown .dropdown-content .dropdown-item:hover {
   color: var(--pop-of-color);
-   
 }
 
 .dropdown:hover .dropdown-content a {
